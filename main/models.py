@@ -12,7 +12,7 @@ class Users(models.Model):
 class OrderModel(models.Model):
     name = models.CharField(max_length=255)
     number = models.CharField(max_length=255)
-    date = models.DateTimeField()
+    date = models.DateField()
     
     def __str__(self):
         return self.name
